@@ -1,0 +1,45 @@
+[
+
+    {
+        "label": "frontWall",
+        "translation": {
+            "x": 600, 
+            "y": 0, 
+            "z": 0
+        },
+        "orientation": {
+            "type": "ov_degrees",
+            "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1,
+                "th": 0
+            }
+        },
+        "x": 15, 
+        "y": 2000, 
+        "z": 1000
+    },
+
+    {
+        "label": "hole",
+        "translation": {
+            "x": 400, 
+            "y": 0, 
+            "z": 0
+        },
+        "orientation": {
+            "type": "ov_degrees",
+            "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1,
+                "th": 0
+            }
+        },
+        "x": 500, 
+        "y": 300, 
+        "z": 500
+    }
+   
+]
