@@ -1,8 +1,9 @@
 import asyncio
 
+
 from viam.robot.client import RobotClient
 from viam.rpc.dial import Credentials, DialOptions
-from viam.components.camera import Camera
+from viam.components.camera import Camera, Arm
 from touch_sdk import Watch
 
 
@@ -29,10 +30,11 @@ async def main():
     print('Resources:')
     print(robot.resource_names)
 
-    camera = Camera.from_robot(robot, "test_lidar")
-    data, _ = await camera.get_point_cloud()
+    # arm
+    arm = Arm.from_robot(robot, "arm")
+    arm_return_value = await arm.get_end_position()
+    print(f"arm get_end_position return value: {arm_return_value}")
 
-    print(data)
     
 
     # Don't forget to close the robot when you're done!
